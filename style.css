@@ -208,7 +208,7 @@ ul { list-style: none; }
 .hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   padding-top: var(--nav-h);
   background: linear-gradient(145deg, #f5f0e8 0%, #ede5d8 60%, #e2d4c4 100%);
@@ -232,9 +232,9 @@ ul { list-style: none; }
   margin-left: auto;
 }*/
 .hero-content {
-  max-width: 480px;
+  max-width: 520px;
+  padding-left: calc((100vw - var(--max-w))/2 + 1.5rem);
 }
-
 .hero-tag {
   font-family: var(--font-mono);
   font-size: 0.725rem;
@@ -309,9 +309,8 @@ ul { list-style: none; }
 .hero-visual {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3rem 2rem;
- /* padding-right: calc((100vw - var(--max-w))/2 + 1.5rem);*/
 }
 
 /*.hero-card-float {
