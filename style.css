@@ -1,15 +1,14 @@
+/* RESET */
 body {
   margin: 0;
-  font-family: Arial;
-  background: #1a1a1a;
-  color: #f5e9e2;
+  font-family: 'Segoe UI', sans-serif;
+  transition: 0.4s;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: #5a1f1f;
+  padding: 20px 10%;
 }
 
 nav ul {
@@ -19,22 +18,16 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
 }
 
 header {
   text-align: center;
-  padding: 80px;
-  background: linear-gradient(135deg, #5a1f1f, #8b2e2e);
+  padding: 80px 20px;
 }
 
 section {
-  padding: 50px 10%;
-}
-
-h2 {
-  color: #ffb3b3;
+  padding: 60px 10%;
 }
 
 .grid {
@@ -44,12 +37,113 @@ h2 {
 }
 
 .card {
-  background: #2a1f1f;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* ========================= */
+/* 🌹 THEME 1 — ROYAL EARTH */
+/* ========================= */
+
+.theme1 {
+  background: #2b2b2b;
+  color: #f7ede2;
+}
+
+.theme1 nav {
+  background: #5a1f2d;
+}
+
+.theme1 header {
+  background: linear-gradient(135deg, #5a1f2d, #a0525c);
+}
+
+.theme1 .card {
+  background: #3a2a2a;
+}
+
+.theme1 h2 {
+  color: #e6ccb2;
+}
+
+/* ========================= */
+/* 🔥 THEME 2 — SUNSET RED */
+/* ========================= */
+
+.theme2 {
+  background: #1c1c1c;
+  color: #fff1e6;
+}
+
+.theme2 nav {
+  background: #8b1e3f;
+}
+
+.theme2 header {
+  background: linear-gradient(135deg, #8b1e3f, #ff6f61);
+}
+
+.theme2 .card {
+  background: #2a1f1f;
+}
+
+.theme2 h2 {
+  color: #ffd6c9;
+}
+
+/* ========================= */
+/* 🍷 THEME 3 — WINE & IVORY */
+/* ========================= */
+
+.theme3 {
+  background: #f2e9e4;
+  color: #4a4e69;
+}
+
+.theme3 nav {
+  background: #722f37;
+  color: white;
+}
+
+.theme3 header {
+  background: linear-gradient(135deg, #722f37, #c9ada7);
+  color: white;
+}
+
+.theme3 .card {
+  background: white;
+}
+
+.theme3 h2 {
+  color: #722f37;
+}
+
+/* ========================= */
+/* 🌿 THEME 4 — EARTH + LIFE */
+/* ========================= */
+
+.theme4 {
+  background: #1a1a1a;
+  color: #f0e5d8;
+}
+
+.theme4 nav {
+  background: #6a1b2e;
+}
+
+.theme4 header {
+  background: linear-gradient(135deg, #6a1b2e, #b56576);
+}
+
+.theme4 .card {
+  background: #2f2626;
+}
+
+.theme4 h2 {
+  color: #b56576;
 }
