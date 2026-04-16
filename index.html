@@ -2,55 +2,139 @@
 <html>
 <head>
   <title>Parusha Sindhu | Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
-      margin: 40px;
-      background: #f8f9fa;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #1a1a1a;
+      color: #f5f5f5;
     }
-    h1 { color: #222; }
-    .section { margin-bottom: 30px; }
-    a { color: #0077b5; text-decoration: none; }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #3e2723, #6d4c41);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      color: #d7ccc8;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #795548;
+      padding-bottom: 10px;
+      color: #ffccbc;
+    }
+
+    .card {
+      background: #2c2c2c;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #ffab91;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 
 <body>
 
-<h1>Parusha Sindhu</h1>
-<p>AIML Student | Machine Learning | Explainable AI</p>
+<header>
+  <h1>Parusha Sindhu</h1>
+  <p class="tagline">
+    I build machine learning systems that don’t just predict, but explain — focusing on performance, clarity, and real-world relevance.
+  </p>
+</header>
 
-<div class="section">
-<h2>About</h2>
-<p>I am a Computer Science (AIML) student focused on building practical machine learning systems. I have worked on projects involving model development, evaluation, and Explainable AI techniques like SHAP and LIME.</p>
-</div>
+<section>
+  <h2>About</h2>
+  <p>
+    I am a Computer Science (AIML) student focused on building practical machine learning systems. 
+    My work revolves around model performance, evaluation, and explainability using techniques like SHAP and LIME.
+  </p>
+</section>
 
-<div class="section">
-<h2>Projects</h2>
+<section>
+  <h2>Projects</h2>
 
-<p><b>XAI Cultural Heritage Prediction</b><br>
-Machine learning model with SHAP & LIME explanations<br>
-<a href="https://github.com/sindhuparusha225/xai-cultural-heritage-prediction">View Project</a></p>
+  <div class="card">
+    <b>XAI Cultural Heritage Prediction</b><br>
+    ML model with SHAP & LIME explanations<br>
+    <a href="https://github.com/sindhuparusha225/xai-cultural-heritage-prediction">View Project</a>
+    <img src="images/shap.png">
+  </div>
 
-<p><b>Fetal Health Classification</b><br>
-CatBoost model with feature selection and 97% accuracy</p>
+  <div class="card">
+    <b>Fetal Health Classification</b><br>
+    CatBoost model with feature optimization (~97% accuracy)
+    <img src="images/fetal_accuracy.png">
+  </div>
 
-<p><b>FairnessAI Platform</b><br>
-System to evaluate bias in ML models</p>
+  <div class="card">
+    <b>FairnessAI Platform</b><br>
+    System to evaluate bias in ML models
+    <img src="images/fairness_dashboard.png">
+  </div>
 
-</div>
+</section>
 
-<div class="section">
-<h2>Skills</h2>
-<p>Python, Machine Learning, XGBoost, SHAP, LIME, SQL</p>
-</div>
+<section>
+  <h2>Skills</h2>
+  <p>Python, Machine Learning, XGBoost, SHAP, LIME, SQL</p>
+</section>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: sindhuparusha225@gmail.com</p>
-<p><a href="https://www.linkedin.com/in/sindhu-parusha-2453i">LinkedIn</a></p>
-<p><a href="https://github.com/sindhuparusha225">GitHub</a></p>
-</div>
+<section>
+  <h2>Certifications</h2>
+
+  <div class="card">
+    <img src="images/aws.png">
+    <img src="images/azure.png">
+  </div>
+
+</section>
+
+<section>
+  <h2>Achievements</h2>
+  <p>
+    NCC Cadet (3 Years) | Lance Corporal  
+    <br>Demonstrated discipline, leadership, and active participation through structured training and camps.
+  </p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: sindhuparusha225@gmail.com</p>
+  <p><a href="https://www.linkedin.com/in/sindhu-parusha-2453i">LinkedIn</a></p>
+  <p><a href="https://github.com/sindhuparusha225">GitHub</a></p>
+</section>
 
 </body>
 </html>
