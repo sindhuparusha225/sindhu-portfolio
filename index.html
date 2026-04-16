@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Parusha Sindhu | Portfolio</title>
+  <title>Sindhu | Portfolio</title>
 
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #1a1a1a;
-      color: #f5f5f5;
+      color: #f5e9e2;
     }
 
     header {
+      padding: 80px 20px;
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #3e2723, #6d4c41);
+      background: linear-gradient(135deg, #5a1f1f, #8b2e2e);
     }
 
     h1 {
+      font-size: 42px;
       margin: 0;
-      font-size: 40px;
     }
 
     .tagline {
-      margin-top: 10px;
-      color: #d7ccc8;
+      margin-top: 15px;
       font-size: 18px;
+      color: #f5c6c6;
     }
 
     section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 50px 10%;
     }
 
     h2 {
-      border-bottom: 2px solid #795548;
+      color: #ffb3b3;
+      border-bottom: 2px solid #8b2e2e;
       padding-bottom: 10px;
-      color: #ffccbc;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: #2c2c2c;
+      background: #2a1f1f;
       padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      transition: 0.3s;
     }
 
-    .card img {
-      width: 100%;
-      margin-top: 10px;
-      border-radius: 8px;
+    .card:hover {
+      transform: translateY(-5px);
+      background: #3a2626;
     }
 
-    a {
-      color: #ffab91;
+    .card a {
+      color: #ff8a80;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background: #5a1f1f;
+      border-radius: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
     }
 
   </style>
@@ -77,63 +90,59 @@
 <section>
   <h2>About</h2>
   <p>
-    I am a Computer Science (AIML) student focused on building practical machine learning systems. 
-    My work revolves around model performance, evaluation, and explainability using techniques like SHAP and LIME.
+    AIML student focused on machine learning, explainability, and fairness in AI. 
+    I work on building models that are not only accurate but also interpretable and responsible.
   </p>
 </section>
 
 <section>
   <h2>Projects</h2>
+  <div class="projects">
 
-  <div class="card">
-    <b>XAI Cultural Heritage Prediction</b><br>
-    ML model with SHAP & LIME explanations<br>
-    <a href="https://github.com/sindhuparusha225/xai-cultural-heritage-prediction">View Project</a>
-    <img src="images/shap.png">
+    <div class="card">
+      <h3>XAI Prediction Model</h3>
+      <p>Explainable ML model using SHAP & LIME</p>
+      <a href="https://github.com/sindhuparusha225/xai-cultural-heritage-prediction">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Fetal Health Classification</h3>
+      <p>CatBoost model with ~97% accuracy</p>
+      <a href="https://github.com/sindhuparusha225/fetal-health-classification-ml">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Fairness AI Dashboard</h3>
+      <p>System to evaluate bias across demographic groups</p>
+      <a href="https://github.com/sindhuparusha225/Fairness-AI-Dashboard">View Project</a>
+    </div>
+
   </div>
+</section>
 
-  <div class="card">
-    <b>Fetal Health Classification</b><br>
-    CatBoost model with feature optimization (~97% accuracy)
-    <img src="images/fetal_accuracy.png">
-  </div>
-
-  <div class="card">
-    <b>FairnessAI Platform</b><br>
-    System to evaluate bias in ML models
-    <img src="images/fairness_dashboard.png">
-  </div>
-
+<section>
+  <h2>Proof</h2>
+  <img src="images/shap.png">
+  <img src="images/confusion_matrix.png">
 </section>
 
 <section>
   <h2>Skills</h2>
-  <p>Python, Machine Learning, XGBoost, SHAP, LIME, SQL</p>
-</section>
-
-<section>
-  <h2>Certifications</h2>
-
-  <div class="card">
-    <img src="images/aws.png">
-    <img src="images/azure.png">
+  <div class="skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>XGBoost</span>
+    <span>CatBoost</span>
+    <span>SHAP</span>
+    <span>LIME</span>
+    <span>MongoDB</span>
   </div>
-
-</section>
-
-<section>
-  <h2>Achievements</h2>
-  <p>
-    NCC Cadet (3 Years) | Lance Corporal  
-    <br>Demonstrated discipline, leadership, and active participation through structured training and camps.
-  </p>
 </section>
 
 <section>
   <h2>Contact</h2>
   <p>Email: sindhuparusha225@gmail.com</p>
   <p><a href="https://www.linkedin.com/in/sindhu-parusha-2453i">LinkedIn</a></p>
-  <p><a href="https://github.com/sindhuparusha225">GitHub</a></p>
 </section>
 
 </body>
