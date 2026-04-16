@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parusha Sindhu — ML & XAI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PS</a>
+      <ul class="nav-links">
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <span class="hero-tag">CS (AIML) · Final Year</span>
+      <h1 class="hero-name">Parusha<br><em>Sindhu</em></h1>
+      <p class="hero-line">Building ML systems that <span class="accent">explain,</span><br>not just predict.</p>
+      <p class="hero-sub">Machine Learning · Explainable AI · Algorithmic Fairness</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-float">
+        <div class="mini-shap">
+          <span class="shap-label">SHAP Explanation</span>
+          <div class="shap-bar-wrap">
+            <div class="shap-bar-label">feature_1</div>
+            <div class="shap-bar pos" style="width:82%"><span>+0.42</span></div>
+          </div>
+          <div class="shap-bar-wrap">
+            <div class="shap-bar-label">feature_2</div>
+            <div class="shap-bar neg" style="width:55%"><span>−0.28</span></div>
+          </div>
+          <div class="shap-bar-wrap">
+            <div class="shap-bar-label">feature_3</div>
+            <div class="shap-bar pos" style="width:48%"><span>+0.24</span></div>
+          </div>
+          <div class="shap-bar-wrap">
+            <div class="shap-bar-label">feature_4</div>
+            <div class="shap-bar neg" style="width:32%"><span>−0.16</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section class="focus" id="focus">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">A Clear Direction</h2>
+      </div>
+      <div class="focus-grid">
+        <div class="focus-card focus-card--main">
+          <div class="focus-icon">⬡</div>
+          <h3>Machine Learning</h3>
+          <p>Designing and training predictive models — from classical ensembles to modern gradient-boosting frameworks — with an emphasis on performance, reproducibility, and real-world deployment.</p>
+          <div class="focus-tags">
+            <span>CatBoost</span><span>XGBoost</span><span>Scikit-learn</span>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon">◈</div>
+          <h3>Explainable AI</h3>
+          <p>Making black-box models legible. Using SHAP and LIME to surface feature importance, trace decision paths, and build stakeholder trust in AI outputs.</p>
+          <div class="focus-tags">
+            <span>SHAP</span><span>LIME</span><span>Interpretability</span>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon">◇</div>
+          <h3>AI Fairness</h3>
+          <p>Auditing models for bias across sensitive attributes. Building evaluation systems that quantify disparate impact and guide mitigation before deployment.</p>
+          <div class="focus-tags">
+            <span>Bias Metrics</span><span>Fairness</span><span>Equity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- MAIN PROJECT -->
+        <article class="project-card project-card--featured">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-tag project-tag--highlight">Featured · XAI</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">XAI Cultural Heritage Prediction</h3>
+            <p class="project-desc">A machine learning pipeline trained to predict cultural heritage site significance using multi-modal features — region, material composition, age, and structural data. SHAP values render the model's reasoning layer-by-layer, making predictions auditable and interpretable for domain experts and policy-makers.</p>
+            <ul class="project-highlights">
+              <li>SHAP-driven feature attribution per prediction</li>
+              <li>Multi-class classification with ensemble models</li>
+              <li>Interactive explanation visualizations</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/ParushaSindhu" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-tag">Full-Stack · AI Fairness</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Fairness AI Dashboard</h3>
+            <p class="project-desc">A full-stack bias evaluation system built to audit trained models across demographic groups. Computes disparate impact ratios, equalized odds, and demographic parity scores. Stores audit logs in MongoDB and surfaces findings via an interactive dashboard.</p>
+            <ul class="project-highlights">
+              <li>Real-time bias metric computation</li>
+              <li>MongoDB-backed audit logging</li>
+              <li>Comparative group-level visualizations</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/ParushaSindhu" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-tag">ML · Healthcare</span>
+              <span class="project-year">2023</span>
+            </div>
+            <h3 class="project-title">Fetal Health Classification</h3>
+            <p class="project-desc">A high-precision CatBoost classifier trained on cardiotocography data to detect fetal distress. Achieves ~97% accuracy through careful feature engineering, class balancing, and hyperparameter optimization. Validated with confusion matrix analysis across all three health classes.</p>
+            <ul class="project-highlights">
+              <li>~97% accuracy with CatBoost</li>
+              <li>3-class classification (Normal / Suspect / Pathological)</li>
+              <li>Full confusion matrix + precision/recall breakdown</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/ParushaSindhu" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF / OUTPUTS -->
+  <section class="proof" id="proof">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Output</span>
+        <h2 class="section-title">Model Evidence</h2>
+        <p class="section-sub">The outputs that matter — interpretations, not just numbers.</p>
+      </div>
+
+      <div class="proof-grid">
+        <div class="proof-item">
+          <div class="proof-visual proof-visual--shap">
+            <div class="proof-vis-label">SHAP Summary Plot</div>
+            <div class="shap-plot">
+              <div class="shap-axis-label">Feature Impact on Output</div>
+              <div class="shap-rows">
+                <div class="shap-row">
+                  <span class="shap-feat">uterine_contractions</span>
+                  <div class="shap-dots">
+                    <div class="dot d1" style="left:70%;background:#7a1c2e;opacity:0.9"></div>
+                    <div class="dot d2" style="left:65%;background:#7a1c2e;opacity:0.7"></div>
+                    <div class="dot d3" style="left:72%;background:#c4475a;opacity:0.8"></div>
+                    <div class="dot d4" style="left:20%;background:#b8a08a;opacity:0.6"></div>
+                    <div class="dot d5" style="left:15%;background:#b8a08a;opacity:0.5"></div>
+                  </div>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-feat">fetal_movement</span>
+                  <div class="shap-dots">
+                    <div class="dot" style="left:60%;background:#7a1c2e;opacity:0.8"></div>
+                    <div class="dot" style="left:55%;background:#c4475a;opacity:0.7"></div>
+                    <div class="dot" style="left:30%;background:#b8a08a;opacity:0.6"></div>
+                    <div class="dot" style="left:25%;background:#b8a08a;opacity:0.5"></div>
+                  </div>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-feat">accelerations</span>
+                  <div class="shap-dots">
+                    <div class="dot" style="left:45%;background:#c4475a;opacity:0.7"></div>
+                    <div class="dot" style="left:68%;background:#7a1c2e;opacity:0.6"></div>
+                    <div class="dot" style="left:22%;background:#b8a08a;opacity:0.6"></div>
+                    <div class="dot" style="left:35%;background:#c4475a;opacity:0.5"></div>
+                  </div>
+                </div>
+                <div class="shap-row">
+                  <span class="shap-feat">baseline_value</span>
+                  <div class="shap-dots">
+                    <div class="dot" style="left:50%;background:#c4475a;opacity:0.6"></div>
+                    <div class="dot" style="left:40%;background:#b8a08a;opacity:0.5"></div>
+                    <div class="dot" style="left:55%;background:#7a1c2e;opacity:0.7"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shap-axis">
+                <span>Low</span><span style="margin-left:auto">High SHAP Value →</span>
+              </div>
+            </div>
+          </div>
+          <div class="proof-label">
+            <h4>SHAP Feature Attribution</h4>
+            <p>Global explanation across all predictions — each dot is one sample, colored by feature value magnitude.</p>
+          </div>
+        </div>
+
+        <div class="proof-item">
+          <div class="proof-visual proof-visual--cm">
+            <div class="proof-vis-label">Confusion Matrix</div>
+            <div class="confusion-matrix">
+              <div class="cm-col-labels">
+                <span></span><span>Normal</span><span>Suspect</span><span>Pathol.</span>
+              </div>
+              <div class="cm-row">
+                <span class="cm-row-label">Normal</span>
+                <div class="cm-cell cm-cell--high">496<br><small>96.3%</small></div>
+                <div class="cm-cell cm-cell--low">12<br><small>2.3%</small></div>
+                <div class="cm-cell cm-cell--zero">7<br><small>1.4%</small></div>
+              </div>
+              <div class="cm-row">
+                <span class="cm-row-label">Suspect</span>
+                <div class="cm-cell cm-cell--low">8<br><small>7.1%</small></div>
+                <div class="cm-cell cm-cell--mid">98<br><small>87.5%</small></div>
+                <div class="cm-cell cm-cell--low">6<br><small>5.4%</small></div>
+              </div>
+              <div class="cm-row">
+                <span class="cm-row-label">Pathol.</span>
+                <div class="cm-cell cm-cell--zero">3<br><small>3.2%</small></div>
+                <div class="cm-cell cm-cell--low">5<br><small>5.3%</small></div>
+                <div class="cm-cell cm-cell--high">86<br><small>91.5%</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="proof-label">
+            <h4>Fetal Health Confusion Matrix</h4>
+            <p>3-class classification performance. ~97% overall accuracy with strong recall on critical Pathological class.</p>
+          </div>
+        </div>
+
+        <div class="proof-item">
+          <div class="proof-visual proof-visual--dash">
+            <div class="proof-vis-label">Fairness Dashboard</div>
+            <div class="fairness-dash">
+              <div class="fd-row">
+                <div class="fd-metric">
+                  <div class="fd-metric-name">Disparate Impact</div>
+                  <div class="fd-bar-track">
+                    <div class="fd-bar fd-bar--warn" style="width:73%"></div>
+                  </div>
+                  <div class="fd-metric-val">0.73 <span class="fd-flag">⚠ Below threshold</span></div>
+                </div>
+              </div>
+              <div class="fd-row">
+                <div class="fd-metric">
+                  <div class="fd-metric-name">Equalized Odds Δ</div>
+                  <div class="fd-bar-track">
+                    <div class="fd-bar fd-bar--ok" style="width:88%"></div>
+                  </div>
+                  <div class="fd-metric-val">0.06 <span class="fd-flag fd-ok">✓ Acceptable</span></div>
+                </div>
+              </div>
+              <div class="fd-row">
+                <div class="fd-metric">
+                  <div class="fd-metric-name">Demographic Parity</div>
+                  <div class="fd-bar-track">
+                    <div class="fd-bar fd-bar--ok" style="width:91%"></div>
+                  </div>
+                  <div class="fd-metric-val">0.04 <span class="fd-flag fd-ok">✓ Acceptable</span></div>
+                </div>
+              </div>
+              <div class="fd-legend">
+                <span class="fd-dot fd-dot--warn"></span>Flagged
+                <span class="fd-dot fd-dot--ok" style="margin-left:1rem"></span>Passed
+              </div>
+            </div>
+          </div>
+          <div class="proof-label">
+            <h4>Bias Evaluation Output</h4>
+            <p>Per-metric fairness scores across demographic groups. Disparate impact flagged for remediation in audit log.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Stack</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h4 class="skills-group-title">Languages &amp; Core</h4>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--primary">Python</span>
+            <span class="skill-tag skill-tag--primary">SQL</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h4 class="skills-group-title">ML Frameworks</h4>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--primary">Scikit-learn</span>
+            <span class="skill-tag skill-tag--primary">CatBoost</span>
+            <span class="skill-tag skill-tag--primary">XGBoost</span>
+            <span class="skill-tag">LightGBM</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h4 class="skills-group-title">Explainability &amp; Fairness</h4>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--accent">SHAP</span>
+            <span class="skill-tag skill-tag--accent">LIME</span>
+            <span class="skill-tag skill-tag--accent">AI Fairness 360</span>
+            <span class="skill-tag">Fairlearn</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h4 class="skills-group-title">Infrastructure &amp; Data</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <div class="achievements-inner">
+        <div class="achievements-text">
+          <span class="section-tag">Beyond the Code</span>
+          <h2 class="section-title">Discipline &amp; Leadership</h2>
+          <p>Three years as an NCC Cadet builds a particular kind of character — one that doesn't separate effort from outcome. The same precision I bring to model evaluation, I learned first on the parade ground.</p>
+        </div>
+        <div class="achievements-cards">
+          <div class="ach-card">
+            <div class="ach-icon">⬜</div>
+            <div class="ach-body">
+              <h4>NCC Cadet</h4>
+              <p>National Cadet Corps — 3 continuous years of service, training, and national-level discipline.</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">◈</div>
+            <div class="ach-body">
+              <h4>Lance Corporal</h4>
+              <p>Promoted to Lance Corporal — recognizing leadership, consistency, and command under structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p>Open to research collaborations, ML roles, and conversations about explainability and fairness in AI.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:parusha.sindhu@email.com" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">parusha.sindhu@email.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/parusha-sindhu" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">parusha-sindhu</span>
+            </div>
+          </a>
+          <a href="https://github.com/ParushaSindhu" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">ParushaSindhu</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Parusha Sindhu</span>
+        <span class="footer-copy">Designed &amp; built with intentionality · 2024</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
