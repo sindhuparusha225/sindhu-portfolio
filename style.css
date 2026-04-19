@@ -5,10 +5,10 @@
 
 /* === DESIGN TOKENS === */
 :root {
-  --navy-dark:     #0a1628;
-  --navy:          #1a2332;
-  --navy-mid:      #2d3e50;
-  --navy-light:    #3d4f63;
+  --navy-dark:     #1F1F1F;   /* main text */
+  --navy:          #6D2E2E;   /* maroon accent */
+  --navy-mid:      #A26769;   /* soft maroon */
+  --navy-light:    #BFA6A0;
   --slate:         #64748b;
   --slate-light:   #94a3b8;
   
