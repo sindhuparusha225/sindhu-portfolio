@@ -1,51 +1,41 @@
 # Parusha Sindhu — Portfolio
 
-Personal portfolio website for Parusha Sindhu, a Computer Science (AIML) student
-specializing in Machine Learning, Explainable AI (SHAP, LIME), and AI Fairness.
+A personal portfolio website for Parusha Sindhu, CS (AIML) student specializing in Machine Learning, Explainable AI, and AI Fairness.
 
-## 🚀 Quick Start
-
-Simply open `index.html` in any modern browser — no build step, no dependencies.
-
-## 📁 File Structure
+## Structure
 
 ```
 portfolio/
-├── index.html        ← Main HTML (all sections)
-├── style.css         ← Stylesheet (earthy palette, animations)
-├── script.js         ← Interactions & scroll reveal
-├── images/           ← (placeholder — add photos if desired)
-│   └── .gitkeep
+├── index.html      # Main HTML file
+├── style.css       # All styles (warm earthy palette)
+├── script.js       # Interactions & scroll animations
+├── images/         # Add your screenshots here
+│   ├── shap-output.png       (optional — for replacing SVG visualizations)
+│   ├── confusion-matrix.png  (optional)
+│   └── dashboard.png         (optional)
 └── README.md
 ```
 
-## 🌐 Deploy to GitHub Pages
+## Running Locally
 
-1. Create a repo named `sindhuparusha225.github.io`
-2. Push all files to the `main` branch
-3. Go to Settings → Pages → Source: `main` branch
-4. Your portfolio will be live at `https://sindhuparusha225.github.io`
+Simply open `index.html` in any browser. No build step required.
 
-Or for any other repo:
-1. Push files to any public GitHub repo
-2. Go to Settings → Pages → Source: `main`
-3. Available at `https://sindhuparusha225.github.io/<repo-name>`
+## Deploying on GitHub Pages
 
-## ✏️ Customization
+1. Push this entire folder to a GitHub repository
+2. Go to **Settings → Pages**
+3. Set source to `main` branch, root `/`
+4. Your site will be live at `https://yourusername.github.io/repository-name`
 
-- **Colors**: Edit CSS variables at the top of `style.css`
-- **Content**: All text is in `index.html` — no framework needed
-- **Projects**: Update GitHub links in the `.project-link` anchors
-- **Contact**: Update email / LinkedIn URL in the `#contact` section
+## Customization
 
-## 🎨 Design
+- **Update your email** in `index.html` — search for `parusha.sindhu@email.com`
+- **Update LinkedIn URL** — search for `linkedin.com/in/parusha-sindhu`
+- **Update GitHub URL** — search for `github.com/ParushaSindhu`
+- **Add real project links** — replace `href` values in the Projects section
+- **Colors** — all design tokens are in `:root` at the top of `style.css`
 
-- Palette: Deep maroon, muted red, soft beige, warm dark
-- Fonts: Cormorant Garamond (display) + DM Sans (body)
-- Animations: CSS-based, scroll-triggered, performance-friendly
-- Character: Hand-crafted SVG anime-style illustration
+## Tech
 
-## 📧 Contact
-
-sindhuparusha225@gmail.com  
-https://github.com/sindhuparusha225
+Pure HTML + CSS + Vanilla JS. No frameworks, no dependencies, no build tools.
+Google Fonts loaded via CDN (Cormorant Garamond, DM Sans, DM Mono).
