@@ -877,6 +877,7 @@ ul { list-style: none; }
   border-color: #6D2E2E;
   transform: translateY(-4px);
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
 .cm-icon {
@@ -893,6 +894,7 @@ ul { list-style: none; }
 
 .cm-info {
   flex: 1;
+  min-width: 0;
 }
 
 .cm-label {
@@ -908,6 +910,19 @@ ul { list-style: none; }
   font-size: 0.9rem;
   font-weight: 500;
   color: #2B2B2B;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+.cm-value a {
+  color: #2B2B2B;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.cm-value a:hover {
+  color: #6D2E2E;
 }
 
 /* ==================== FOOTER ==================== */
